@@ -1,30 +1,36 @@
-#purple practice 
+# #purple practice 
+
+# #task 1:create and display
+# user_input=[]
+# print("Please enter your three favorite dishes:")
+# user_input1= input(f"input your first favorite nigerian dish: ")
+# user_input2= input(f"input your second favorite nigerian dish: ")
+# user_input3= input(f"input your third favorite nigerian dish: ")
+# user_input.append(user_input1)
+# user_input.append(user_input2)
+# user_input.append(user_input3)
+# user_input_tuple = tuple(user_input)
+# print(user_input_tuple)
+# print(*user_input_tuple, sep="\n")
+
 
 #task 1:create and display
 user_input=[]
-print("Please enter your three favorite dishes:")
-user_input1= input(f"input your first favorite nigerian dish: ")
-user_input2= input(f"input your second favorite nigerian dish: ")
-user_input3= input(f"input your third favorite nigerian dish: ")
+print("Please enter names of 5 of your favorite friends:")
+user_input1= input(f"input name of favorite friend 1: ")
+user_input2= input(f"input name of favorite friend 2: ")
+user_input3= input(f"input name of favorite friend 3: ")
+user_input4= input(f"input name of favorite friend 4: ")
+user_input5= input(f"input name of favorite friend 5: ")
 user_input.append(user_input1)
 user_input.append(user_input2)
 user_input.append(user_input3)
+user_input.append(user_input4)
+user_input.append(user_input5)
+user_input.reverse()
+print(user_input)
 user_input_tuple = tuple(user_input)
 print(user_input_tuple)
-print(*user_input_tuple, sep="\n")
-
-
-# #task 2: Turple and input
-# user_input=[]
-# ran_ge= 6
-# i= tuple(range(1,ran_ge))
-# print("enter names of your five best friends below")
-# for x in i :
-#     user_input1= input(f"input your best friend {x}: ")
-#     user_input.append(user_input1)
-# user_input.reverse()
-# user_input_tuple = tuple(user_input)
-# print(user_input_tuple)
 
 
 # #task3 turple operation
