@@ -14,40 +14,45 @@
 # print(*user_input_tuple, sep="\n")
 
 
-#task 1:create and display
-user_input=[]
-print("Please enter names of 5 of your favorite friends:")
-user_input1= input(f"input name of favorite friend 1: ")
-user_input2= input(f"input name of favorite friend 2: ")
-user_input3= input(f"input name of favorite friend 3: ")
-user_input4= input(f"input name of favorite friend 4: ")
-user_input5= input(f"input name of favorite friend 5: ")
-user_input.append(user_input1)
-user_input.append(user_input2)
-user_input.append(user_input3)
-user_input.append(user_input4)
-user_input.append(user_input5)
-user_input.reverse()
-print(user_input)
-user_input_tuple = tuple(user_input)
-print(user_input_tuple)
-
-
-# #task3 turple operation
+# #task 1:create and display
 # user_input=[]
-# ran_ge= 6
-# i= tuple(range(1,ran_ge))
-# print("enter names of five nigerian states below")
-# for x in i :
-#     user_input1= input(f"enter the number {x} nigerian: ")
-#     user_input.append(user_input1)
+# print("Please enter names of 5 of your favorite friends:")
+# user_input1= input(f"input name of favorite friend 1: ")
+# user_input2= input(f"input name of favorite friend 2: ")
+# user_input3= input(f"input name of favorite friend 3: ")
+# user_input4= input(f"input name of favorite friend 4: ")
+# user_input5= input(f"input name of favorite friend 5: ")
+# user_input.append(user_input1)
+# user_input.append(user_input2)
+# user_input.append(user_input3)
+# user_input.append(user_input4)
+# user_input.append(user_input5)
+# user_input.reverse()
+# print(user_input)
+# user_input_tuple = tuple(user_input)
+# print(user_input_tuple)
+
+
+# #task 3 tURPLE Operation
+# user_input=[]
+# print("Please enter names of 5 Nigerian states:")
+# user_input1= input(f"input name of state 1: ")
+# user_input2= input(f"input name of state 2: ")
+# user_input3= input(f"input name of state 3: ")
+# user_input4= input(f"input name of state 4: ")
+# user_input5= input(f"input name of state 5: ")
+# user_input.append(user_input1)
+# user_input.append(user_input2)
+# user_input.append(user_input3)
+# user_input.append(user_input4)
+# user_input.append(user_input5)
 # user_input_tuple = tuple(user_input)
 # print(f"the first state in the turple is:  {user_input_tuple[0]}")
 # print(f"the last state in turple is: {user_input_tuple[-1]}")
 # print( "lagos" in user_input_tuple)
 
 
-# #TASK4
+# #TASK4 turple unpacking
 # data=("First_name","Age","Favorite_color","Home_town")
 # user_input = tuple(input("please input your details using the format as shown Firstname,Age,Favorite color,Hometown: ").split(",",))
 # user_input1 = user_input
@@ -56,25 +61,28 @@ print(user_input_tuple)
 #     print(f"{x}")
 
 
-# #TASK5
-# #MODIFY TURPLE INDIRECTLY 
-# user_input=[]
-# ran_ge= 4
-# i= tuple(range(1,ran_ge))
-# print("enter names of 3 items on your shopping list: ")
-# for x in i :
-#     user_input1= input(f"input shopping item {x}: ")
-#     user_input.append(user_input1)
-# shopping_list = tuple(user_input)
-# shop_convert = list(shopping_list)
-# input("please input 2 more items to add to your shopping list")
-# ran_ge= 3
-# i= tuple(range(1,ran_ge))
-# for x in i :
-#     shopping_list1= input(f"input shopping item {x}: ")
-#     shop_convert.append(shopping_list1)
-# shopping_list= tuple(shop_convert)
-# print(" | ".join(shopping_list))
+#task 5:Modify tple indirectly 
+user_input=[]
+print("enter names of 3 items on your shopping list: ")
+user_input1= input(f"input shopping item 1: ")
+user_input2= input(f"input shopping item 2: ")
+user_input3= input(f"input shopping item 3: ")
+user_input4= input(f"input shopping item 4: ")
+user_input5= input(f"input shopping item 5: ")
+user_input.append(user_input1)
+user_input.append(user_input2)
+user_input.append(user_input3)
+user_input.append(user_input4)
+user_input.append(user_input5)
+shopping_list = tuple(user_input)
+shop_convert = list(shopping_list)
+input("please input 2 more items to add to your shopping list")
+user_input6= input(f"input shopping item 6: ")
+user_input7= input(f"input shopping item 7: ")
+user_input.append(user_input6)
+user_input.append(user_input7)
+shopping_list= tuple(shop_convert)
+print(" | ".join(shopping_list))
 
 
 # #TASK6
