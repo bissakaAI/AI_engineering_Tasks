@@ -1,17 +1,17 @@
-# #purple practice 
+#purple practice 
 
-# #task 1:create and display
-# user_input=[]
-# ran_ge= 4
-# i= tuple(range(1,ran_ge))
-# print("Please enter your three favorite dishes:")
-# for x in i :
-#     user_input1= input(f"input your favorite nigerian dish {x}: ")
-#     user_input.append(user_input1)
-# user_input_tuple = tuple(user_input)
-# print(user_input_tuple)
-# for v in user_input_tuple:
-#         print(f"{v}\n")
+#task 1:create and display
+user_input=[]
+print("Please enter your three favorite dishes:")
+user_input1= input(f"input your first favorite nigerian dish: ")
+user_input2= input(f"input your second favorite nigerian dish: ")
+user_input3= input(f"input your third favorite nigerian dish: ")
+user_input.append(user_input1)
+user_input.append(user_input2)
+user_input.append(user_input3)
+user_input_tuple = tuple(user_input)
+print(user_input_tuple)
+print(*user_input_tuple, sep="\n")
 
 
 # #task 2: Turple and input
@@ -71,15 +71,15 @@
 # print(" | ".join(shopping_list))
 
 
-#TASK6
-#ATTENDANCE TRACKER
-days_of_the_week =("Monday","Tuesday","wednesday","thursday","friday","saturday","sunday")
-months_of_year = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
-user_input_name = input ("input your full name : ")
-user_input_gender = input ("Are ypou a male or female: ")
-user_input_track = input ("what course track did you enroll for: ")
-user_input_month = int(input ("input Month using the format e.gmay is 05: "))
-user_input_day = int(input ("current day number e.g (1-7): "))
-correct_month = months_of_year[user_input_month -1]
-correct_day=days_of_the_week[user_input_day -1]
-print(f"Name:\t{user_input_name}\nGender:\t{user_input_gender}\nTrack:\t{user_input_track}\nmonth:\t{correct_month}\nDay:\t{correct_day}")
+# #TASK6
+# #ATTENDANCE TRACKER
+# days_of_the_week =("Monday","Tuesday","wednesday","thursday","friday","saturday","sunday")
+# months_of_year = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+# user_input_name = input ("input your full name : ")
+# user_input_gender = input ("Are ypou a male or female: ")
+# user_input_track = input ("what course track did you enroll for: ")
+# user_input_month = int(input ("input Month using the format e.gmay is 05: "))
+# user_input_day = int(input ("current day number e.g (1-7): "))
+# correct_month = months_of_year[user_input_month -1]
+# correct_day=days_of_the_week[user_input_day -1]
+# print(f"Name:\t{user_input_name}\nGender:\t{user_input_gender}\nTrack:\t{user_input_track}\nmonth:\t{correct_month}\nDay:\t{correct_day}")
