@@ -14,33 +14,37 @@
 # print(*user_input_tuple, sep="\n")
 
 
-#task 1:create and display
-user_input=[]
-print("Please enter names of 5 of your favorite friends:")
-user_input1= input(f"input name of favorite friend 1: ")
-user_input2= input(f"input name of favorite friend 2: ")
-user_input3= input(f"input name of favorite friend 3: ")
-user_input4= input(f"input name of favorite friend 4: ")
-user_input5= input(f"input name of favorite friend 5: ")
-user_input.append(user_input1)
-user_input.append(user_input2)
-user_input.append(user_input3)
-user_input.append(user_input4)
-user_input.append(user_input5)
-user_input.reverse()
-print(user_input)
-user_input_tuple = tuple(user_input)
-print(user_input_tuple)
-
-
-# #task3 turple operation
+# #task 2:tuple and input
 # user_input=[]
-# ran_ge= 6
-# i= tuple(range(1,ran_ge))
-# print("enter names of five nigerian states below")
-# for x in i :
-#     user_input1= input(f"enter the number {x} nigerian: ")
-#     user_input.append(user_input1)
+# print("Please enter names of 5 of your favorite friends:")
+# user_input1= input(f"input name of favorite friend 1: ")
+# user_input2= input(f"input name of favorite friend 2: ")
+# user_input3= input(f"input name of favorite friend 3: ")
+# user_input4= input(f"input name of favorite friend 4: ")
+# user_input5= input(f"input name of favorite friend 5: ")
+# user_input.append(user_input1)
+# user_input.append(user_input2)
+# user_input.append(user_input3)
+# user_input.append(user_input4)
+# user_input.append(user_input5)
+# user_input.reverse()
+# print(user_input)
+# user_input_tuple = tuple(user_input)
+# print(user_input_tuple)
+
+
+# user_input=[]
+# print("Please enter names of 5 of your favorite friends:")
+# user_input1= input(f"input name of favorite friend 1: ")
+# user_input2= input(f"input name of favorite friend 2: ")
+# user_input3= input(f"input name of favorite friend 3: ")
+# user_input4= input(f"input name of favorite friend 4: ")
+# user_input5= input(f"input name of favorite friend 5: ")
+# user_input.append(user_input1)
+# user_input.append(user_input2)
+# user_input.append(user_input3)
+# user_input.append(user_input4)
+# user_input.append(user_input5)
 # user_input_tuple = tuple(user_input)
 # print(f"the first state in the turple is:  {user_input_tuple[0]}")
 # print(f"the last state in turple is: {user_input_tuple[-1]}")
