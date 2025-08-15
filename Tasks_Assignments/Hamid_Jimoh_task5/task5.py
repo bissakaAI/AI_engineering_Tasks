@@ -19,18 +19,18 @@ user_input_tuple = tuple(user_input)
 print(user_input_tuple)
 
 
-# #task3 turple operation
-# user_input=[]
-# ran_ge= 6
-# i= tuple(range(1,ran_ge))
-# print("enter names of five nigerian states below")
-# for x in i :
-#     user_input1= input(f"enter the number {x} nigerian: ")
-#     user_input.append(user_input1)
-# user_input_tuple = tuple(user_input)
-# print(f"the first state in the turple is:  {user_input_tuple[0]}")
-# print(f"the last state in turple is: {user_input_tuple[-1]}")
-# print( "lagos" in user_input_tuple)
+#task3 turple operation
+user_input=[]
+ran_ge= 6
+i= tuple(range(1,ran_ge))
+print("enter names of five nigerian states below")
+for x in i :
+    user_input1= input(f"enter the number {x} nigerian: ")
+    user_input.append(user_input1)
+user_input_tuple = tuple(user_input)
+print(f"the first state in the turple is:  {user_input_tuple[0]}")
+print(f"the last state in turple is: {user_input_tuple[-1]}")
+print( "lagos" in user_input_tuple)
 
 
 #TASK4 turple unpacking

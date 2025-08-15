@@ -3,10 +3,10 @@
 print("Hey guest, kindly input your full name ")
 i= tuple(range(1,100000))
 seminar_attendance = set()
-seminar_attendance2 =set()
 for x in i:
-    user_input = input(f"Hey guest, kindly input your full name: ")
+    user_input = input(f"Hey guest, kindly input your full name: ").lower()
+    if user_input in seminar_attendance:
+        print("input is registered")
     seminar_attendance.add(user_input)
-    names= list(seminar_attendance)
-    print(names)
-    sorted_names = names.sort()
+    print(sorted(seminar_attendance))
+    
