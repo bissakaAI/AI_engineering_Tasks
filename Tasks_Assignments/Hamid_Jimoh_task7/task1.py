@@ -1,6 +1,4 @@
-database ={
-
-}
+database ={}
 user_input={}
 courses=[]
 for i in range (1,100):
