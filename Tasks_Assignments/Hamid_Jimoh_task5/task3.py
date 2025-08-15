@@ -1,0 +1,16 @@
+#task3 turple operation
+user_input=[]
+print("Please enter names of 5 NIGERIAN STATES:")
+user_input1= input(f"input name of first nigerian state : ").lower()
+user_input2= input(f"input name of second nigerian state : ").lower()
+user_input3= input(f"input name of third nigerian state : ").lower()
+user_input4= input(f"input name of fourth nigerian state : ").lower()
+user_input5= input(f"input name of fifth nigerian state : ").lower()
+user_input.append(user_input1)
+user_input.append(user_input2)
+user_input.append(user_input3)
+user_input.append(user_input4)
+user_input_tuple = tuple(user_input)
+print(f"the first state in the turple is:  {user_input_tuple[0]}")
+print(f"the last state in turple is: {user_input_tuple[-1]}")
+print( "lagos" in user_input_tuple)
