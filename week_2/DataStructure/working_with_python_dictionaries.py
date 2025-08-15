@@ -114,5 +114,5 @@ student = {
 print(f"name: {student["name"]}")
 print(f"Subjects: {' and '.join(student['subjects'])}")
 
-FINAL THOUGHT
+
 
