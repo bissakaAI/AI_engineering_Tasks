@@ -35,7 +35,7 @@ for subjects in list_of_subject:
 average_score = sum(scores)/len(scores)
 
 #create a dictionary to store each students profile
-student_data ={"Student name: ": student_name,
+student_data ={"Student name": student_name,
                "Age": student_age,
                "gender": student_gender,
                "hobbies": list(Hobbies)
@@ -57,12 +57,22 @@ database_per_student = {"student_data":student_data,
 
 database={student_name:database_per_student}
 course_details["Average_score"]=average_score
-
+initial = ".".join([n[0] for n in student_name.split()])
+initials = "".join([n[2:] for n in initial.split()])
 #OUTPUT SECTION
 print("\n\t \t === STUDENT PROFILE ===")
+print(f"Name:\t\t{database_per_student['student_data']["Student name"]}")
+print(f"Age:\t\t{database_per_student['student_data']['Age']}")
+print(f"Gender:\t\t{database_per_student['student_data']['gender']}")
+print(f"Initials:\t\t{initials}")
+# print(f"Initials:\t{database_per_student['student_data']['Student name']}")
+print("\n--- Academic Scores ---")
+print(database_per_student["course_details"])
+print("\n--- Guardian Info ---")
+print(f"Name: {database_per_student["guardian_data"]["Guardian name"]}")
+print(f"Relationship with guardian: {database_per_student["guardian_data"]["Relationship with guardian"]}")
+print(f"Phone number: {database_per_student["guardian_data"]["Number"]}")
+print("\n--- Hobbies ---")
+print(f"{student_data["hobbies"]}")
 print(f"You have {len(Hobbies)} hobbies")
-print(Hobbies)
-print(f"The average score of the 3 subjects is: {average_score}")
-
-print (database)
-
+print(f"Average Score:\t{course_details["Average_score"]:.2f}")
