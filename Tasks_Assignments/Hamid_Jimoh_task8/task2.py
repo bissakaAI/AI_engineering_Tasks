@@ -13,11 +13,11 @@ sch_status=input("are you currently a beneficiary of any other scholarship by an
 #ANOTHER INPUT ASKING THEM FOR THE NAMES OF S5 subjects for there o level and asking fif they have A or B
 input("do you have distinctions in 5 relevant subject in WAEC/WASSCE including MATH and ENGLISH ")
 subjects = input("list the 5 courses seperated by commas: ").split(",")
-first_sub = input(f"what is your grade in{subjects[0]}")
-second_sub= input(f"what is your grade in{subjects[1]}")
-third_sub=input(f"what is your grade in{subjects[2]}")
-forth_sub=input(f"what is your grade in{subjects[3]}")
-fifth_sub=input(f"what is your grade in{subjects[4]}")
+first_sub = input(f"what is your grade in {subjects[0]}: ")
+second_sub= input(f"what is your grade in {subjects[1]}: ")
+third_sub=input(f"what is your grade in {subjects[2]}: ")
+forth_sub=input(f"what is your grade in {subjects[3]}: ")
+fifth_sub=input(f"what is your grade in {subjects[4]}: ")
 
 #Eligibility check
 """this checks using logical operators if the user meets certain creiteria and uses it to determine if they are eligible or not """
