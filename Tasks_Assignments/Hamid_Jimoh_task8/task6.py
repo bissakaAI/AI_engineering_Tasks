@@ -16,19 +16,32 @@ Candidates who meet the departmental cut-off marks are offered admission.
 
 - Write a program to account for all of the conditions above, Such that when a user imputes all their required details, they are told if they will be legible for admission or not.utme_score"""
 
+name = input("What is your full name: ").title()
+Age = int(input("How old are you: "))
+utme_score =float(input("What is your score in UTME (JAMB)"))
+subjects = []
+grades = []
+o_level_qualification=input("do you have minimum of C  in 5 relevant subjects in your O'Level including Mathematics and English ")
+if o_level_qualification == "yes":
+    for i in range(1,2):
+        subject = input(f"Input the subject {i}: ")
+        subjects.append(subject)
+        grade = input(f"what is your grade in {subject}: ").lower()
+        grades.append(grade)
+print (grades)
+for x in grades:
 
-utme_score =input("What is your score in UTME (JAMB)")
-input("do you have minimum of C  in 5 relevant subjects in your O'Level including Mathematics and English ")
-subjects = input("list the 5 courses seperated by commas: ").split(",")
-first_sub = input(f"what is your grade in {subjects[0]}: ")
-second_sub= input(f"what is your grade in {subjects[1]}: ")
-third_sub=input(f"what is your grade in {subjects[2]}: ")
-forth_sub=input(f"what is your grade in {subjects[3]}: ")
-fifth_sub=input(f"what is your grade in {subjects[4]}: ")
+    if x != "a" and x != "b" and x != "c":
+         grade_eligibility = False
+         break
+    else:
+      grade_eligibility =True
+university_choice =input ("Is your University first choice UNILAG? (yes/no): ")
+eligibility = 
 
-#this part is for those that have passed the set pass mark for utme of 200
-#congratulate them for making it this far and tell them to do their best in the post UTME
-"CONGRATULATIONS, YOU HAVE PASSED THE FIRST ROUND OF THE ADMISSION PROCESS".center(100)
-"This is an incredible one.You came out ontop despite the hudles" 
-"you deserve to be celebrated".center(80)
-print("Welcome to the next stage of the admission process")
+# #this part is for those that have passed the set pass mark for utme of 200
+# #congratulate them for making it this far and tell them to do their best in the post UTME
+# "CONGRATULATIONS, YOU HAVE PASSED THE FIRST ROUND OF THE ADMISSION PROCESS".center(100)
+# "This is an incredible one.You came out ontop despite the hudles" 
+# "you deserve to be celebrated".center(80)
+# print("Welcome to the next stage of the admission process")
