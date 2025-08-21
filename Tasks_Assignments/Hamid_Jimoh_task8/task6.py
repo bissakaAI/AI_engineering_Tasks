@@ -36,12 +36,20 @@ for x in grades:
          break
     else:
       grade_eligibility =True
-university_choice =input ("Is your University first choice UNILAG? (yes/no): ")
-eligibility = 
 
-# #this part is for those that have passed the set pass mark for utme of 200
-# #congratulate them for making it this far and tell them to do their best in the post UTME
-# "CONGRATULATIONS, YOU HAVE PASSED THE FIRST ROUND OF THE ADMISSION PROCESS".center(100)
-# "This is an incredible one.You came out ontop despite the hudles" 
-# "you deserve to be celebrated".center(80)
-# print("Welcome to the next stage of the admission process")
+if grade_eligibility == True and Age >= 16  and utme_score >= 200 :
+    #this part is for those that have passed the set pass mark for utme of 200
+    #congratulate them for making it this far and tell them to do their best in the post UTME
+    print("CONGRATULATIONS, YOU HAVE PASSED THE FIRST ROUND OF THE ADMISSION PROCESS".center(100))
+    print("This is an incredible one.You came out ontop despite the hudles and you deserve to be celebrated")
+    print("Welcome to the next stage of the admission process")
+    university_choice =input ("Is your University first choice UNILAG? (yes/no): ").lower()
+    if university_choice == "yes" :
+        print("Welcome to the online post utme Examination")
+        exam_question= input("what is the first planet in the solar system?").title()
+        if exam_question == "Mercury":
+            print("Congratulations you have passed the POST-UTME")
+            #now we want to set the department cutoff mark
+else:
+    print("Dear Candidate you do not meet the required minimum qualification set by JAMB, kindly revoiew the requirements and try again during the next intake")
+
