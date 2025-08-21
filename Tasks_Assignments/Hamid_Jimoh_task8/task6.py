@@ -21,6 +21,8 @@ Age = int(input("How old are you: "))
 utme_score =float(input("What is your score in UTME (JAMB)"))
 subjects = []
 grades = []
+correct_answer = []
+utme_admis_status =[]
 o_level_qualification=input("do you have minimum of C  in 5 relevant subjects in your O'Level including Mathematics and English ")
 if o_level_qualification == "yes":
     for i in range(1,2):
@@ -38,18 +40,23 @@ for x in grades:
       grade_eligibility =True
 
 if grade_eligibility == True and Age >= 16  and utme_score >= 200 :
+    utme_admis_status.append(True)
     #this part is for those that have passed the set pass mark for utme of 200
     #congratulate them for making it this far and tell them to do their best in the post UTME
     print("CONGRATULATIONS, YOU HAVE PASSED THE FIRST ROUND OF THE ADMISSION PROCESS".center(100))
     print("This is an incredible one.You came out ontop despite the hudles and you deserve to be celebrated")
     print("Welcome to the next stage of the admission process")
+    
+else:
+    print("Dear Candidate you do not meet the required minimum qualification set by JAMB, kindly revoiew the requirements and try again during the next intake")
+
+#POST UTME 
+if utme_admis_status == True:   
     university_choice =input ("Is your University first choice UNILAG? (yes/no): ").lower()
     if university_choice == "yes" :
         print("Welcome to the online post utme Examination")
         exam_question= input("what is the first planet in the solar system?").title()
         if exam_question == "Mercury":
-            print("Congratulations you have passed the POST-UTME")
-            #now we want to set the department cutoff mark
-else:
-    print("Dear Candidate you do not meet the required minimum qualification set by JAMB, kindly revoiew the requirements and try again during the next intake")
-
+            correct_answer.append("correct")
+        else:
+            correct_answer.append("wrong")
