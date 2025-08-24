@@ -28,7 +28,7 @@
 #         x = 10/1
 #         print("Result:", x)
 
-# This is a case of multiple exception
+# #This is a case of multiple exception
 
 # try:
 #     number = int("abdd")   # ValueError
@@ -51,30 +51,30 @@
 # finally:
 #     print("Closing file if it was opened.")
 
-# balance = 5000  # starting balance
+balance = 5000  # starting balance
 
-# print("Welcome to the ATM")
-# amount = input("Enter amount to withdraw: ")
+print("Welcome to the ATM")
+amount = input("Enter amount to withdraw: ")
 
-# try:
-#     amount = float(amount)  # convert input to number
+try:
+    amount = float(amount)  # convert input to number
     
-#     if amount > balance:
-#         raise ValueError("Insufficient funds.")
+    if amount > balance:
+        raise ValueError("Insufficient funds.")
     
-#     balance -= amount
-#     print("Withdrawal successful. New balance: ₦", balance)
+    balance -= amount
+    print("Withdrawal successful. New balance: ₦", balance)
 
-# except ValueError as e:
-#     print("Error:", e)
+except ValueError as e:
+    print("Error:", e)
 
-# except Exception as e:
-#     print("Unexpected error:", e)
+except Exception as e:
+    print("Unexpected error:", e)
 
 # finally:
 #     print("Transaction session closed.")
 
-# Wrong Condition in Logic
+# #Wrong Condition in Logic
 
 # age = 18
 # if age > 18:   # Should be >=
@@ -85,7 +85,7 @@
 
 # # output: Not eligible (wrong result)
 
-# Wrong Formula/Computation
+# #Wrong Formula/Computation
 
 # length = 10
 # width = 5
