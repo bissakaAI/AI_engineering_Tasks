@@ -319,19 +319,19 @@
 # evens = list(filter(lambda x:x%2 ==0, numbers))
 # print(evens) #output: [10,20,30]
 
-#lets use lambda to sort the turple within a list 
-students = [("Ayo",20),("Bola",18),("chika",22)]
+# #lets use lambda to sort the turple within a list 
+# students = [("Ayo",20),("Bola",18),("chika",22)]
 
-#sort by age 
-sorted_students = sorted (students,key=lambda studen:studen[1])
-print(sorted_students)
-# Output: [('Bola', 18), ('Ayo', 20), ('Chika', 22)]
-students_sorted_descending = sorted(students, key=lambda student: student[1], reverse=True)
-print(students_sorted_descending)
+# #sort by age 
+# sorted_students = sorted (students,key=lambda studen:studen[1])
+# print(sorted_students)
+# # Output: [('Bola', 18), ('Ayo', 20), ('Chika', 22)]
+# students_sorted_descending = sorted(students, key=lambda student: student[1], reverse=True)
+# print(students_sorted_descending)
 
-# Output: [('Chika', 22), ('Ayo', 20), ('Bola', 18)]
-students_sorted_alphabetically = sorted(students, key=lambda student: student[0])
-print(students_sorted_alphabetically)
+# # Output: [('Chika', 22), ('Ayo', 20), ('Bola', 18)]
+# students_sorted_alphabetically = sorted(students, key=lambda student: student[0])
+# print(students_sorted_alphabetically)
 
 # Output: [('Ayo', 20), ('Bola', 18), ('Chika', 22)]
 
