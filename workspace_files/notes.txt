@@ -1,0 +1,5 @@
+My to-do list
+-Revise python file handling
+-Practice error handling within a function
+-Practice JSON & CSV
+--> Build a small project
