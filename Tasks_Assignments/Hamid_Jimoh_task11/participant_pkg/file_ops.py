@@ -21,7 +21,6 @@ def save_participant(path,dictionary):
             writer = csv.DictWriter(f,fieldnames=participant_header)
             writer.writeheader()
             writer.writerow(dictionary)
-
             
 def load_participants(path):
     with open(path, "r", newline="" ,encoding="utf-8") as f:
