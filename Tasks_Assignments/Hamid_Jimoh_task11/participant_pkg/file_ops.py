@@ -5,20 +5,24 @@ def save_participant(path,dictionary):
     participant_header = ['Name','Age','Track' ,'Phone_Number']
     if path.exists()==True:
         with open(path,"r",newline="", encoding="utf-8") as f:
-            writer= csv.reader(f)
-        if f.readline == "":
+            writer_len= list(csv.reader(f))
+        if len(writer_len) <=1 :
+            with open(path,"w",newline="", encoding="utf-8") as f:
                 writer = csv.DictWriter(f,fieldnames=participant_header)
                 writer.writeheader()
                 writer.writerow(dictionary)
-        elif f.readline != "":
+        else:
             with open(path,"a",newline="", encoding="utf-8") as f:
-                writer= csv.writer(f)
+                writer = csv.DictWriter(f,fieldnames=participant_header)
+                writer.writeheader()
                 writer.writerow(dictionary)
     else:
         with open(path,"w",newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f,fieldnames=participant_header)
             writer.writeheader()
             writer.writerow(dictionary)
+
+            
 def load_participants(path):
     with open(path, "r", newline="" ,encoding="utf-8") as f:
         writer = csv.reader(f)

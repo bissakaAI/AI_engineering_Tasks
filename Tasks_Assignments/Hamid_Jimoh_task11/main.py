@@ -43,11 +43,10 @@ while True:
         print(dictionary)
 
     participant_details()
-    break
-file_ops.save_participant(csv_file,dictionary)
+    file_ops.save_participant(csv_file,dictionary)
 
 
-file_ops.load_participants(csv_file)
+    file_ops.load_participants(csv_file)
 
 
 #to append the details of input to contack_details but as a dictionary
