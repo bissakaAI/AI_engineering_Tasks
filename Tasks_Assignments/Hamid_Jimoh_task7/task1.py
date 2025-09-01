@@ -2,8 +2,9 @@ database ={
 
 }
 user_input={}
+database.update({user_input["Name"] : user_input})
 courses=[]
-for i in range (1,100):
+for i in range (1,3):
     user_name= input(f"input name your name: ")
     user_age = int(input(f"input name your age: "))
     user_gender = input(f"input name your gender: ")
@@ -15,6 +16,7 @@ for i in range (1,100):
     user_input["Name"]=user_name
     user_input["Gender"]=user_gender
     user_input["age"]=user_age
-    database[f"{user_name}"]=user_input
-    for key,value in database.items():
-        print(f"{key}:\t{value}\n")
+
+
+for key,value in database.items():
+    print(f"{key}:\t{value}\n")
