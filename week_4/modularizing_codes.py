@@ -178,37 +178,37 @@
 # student_details(name="Peter", track = "AI Engineering", interest="Block Chain")
 
 
-# # Define student profile function
+# Define student profile function
 
-# # Ensure to not the order of arrangement of the types of arguments used.
-# # This is how to arrange it of you are using everything or some of the together
+# Ensure to not the order of arrangement of the types of arguments used.
+# This is how to arrange it of you are using everything or some of the together
 
-# def participant_profile(name, age, track="AI Development", *skills, **extra_info):
-#     """
-#     Generate a profile for a bootcamp participant using different types of arguments.
-#     """
-#     profile = f"\n--- Bootcamp Participant Profile ---\n"
-#     profile += f"Name: {name}\n"
-#     profile += f"Age: {age}\n"
-#     profile += f"Track: {track}\n"
+def participant_profile(name, age, track="AI Development", *skills, **extra_info):
+    """
+    Generate a profile for a bootcamp participant using different types of arguments.
+    """
+    profile = f"\n--- Bootcamp Participant Profile ---\n"
+    profile += f"Name: {name}\n"
+    profile += f"Age: {age}\n"
+    profile += f"Track: {track}\n"
 
-#     # Skills (from *args)
-#     if skills:
-#         profile += "Skills: " + ", ".join(skills) + "\n"
-#     else:
-#         profile += "Skills: Not yet specified\n"
+    # Skills (from *args)
+    if skills:
+        profile += "Skills: " + ", ".join(skills) + "\n"
+    else:
+        profile += "Skills: Not yet specified\n"
 
-#     # Extra info (from **kwargs)
-#     if extra_info:
-#         profile += "Additional Info:\n"
-#         for key, value in extra_info.items():
-#             profile += f" - {key.capitalize()}: {value}\n"
-#     else:
-#         profile += "Add Info: Not yet specified"
+    # Extra info (from **kwargs)
+    if extra_info:
+        profile += "Additional Info:\n"
+        for key, value in extra_info.items():
+            profile += f" - {key.capitalize()}: {value}\n"
+    else:
+        profile += "Add Info: Not yet specified"
 
-#     return profile  # Do you remember `return` and why it is used? We are using it so it can be reused in other places
+    return profile  # Do you remember `return` and why it is used? We are using it so it can be reused in other places
 
-# print(participant_profile("Peter", 24))
+print(participant_profile("Peter", 24))
 # # Example 3: Adding variable-length positional arguments (*args)
 # print(participant_profile("David", 27, "Data Science", "Python", "SQL", "Machine Learning"))
 
