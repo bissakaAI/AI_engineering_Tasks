@@ -73,6 +73,8 @@ try:
                 count += 1
         total_score = count/0 * 50    + (utme_score/8) 
         print (total_score)
+        if total_score >= 60:
+            print(" Congratulations you have been admitted")
 except ValueError:
     print("THis is a wrong input")
 except TypeError:
